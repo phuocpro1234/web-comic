@@ -19,7 +19,12 @@ const comicSchema = new mongoose.Schema({
         type: String,
         required: true,
         trim: true
+    },
+    book:{
+        type:Boolean,
+        required:true
     }
+
 })
 
 module.exports = mongoose.model('Comic', comicSchema, 'comics');

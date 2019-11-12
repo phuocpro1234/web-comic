@@ -1,0 +1,579 @@
+    1  echo 123
+    2  echo 'adadasd'
+    3  sudo lshw -c display
+    4  mkdir LinuxOS
+    5  cd LinuxOS/
+    6  mkdir Lab1
+    7  cd Lab1/
+    8  ls
+    9  pwd
+   10  ls -l
+   11  touch file1
+   12  cat > file1 <<"endFile"
+   13  home/ngocphu/LinuxOS/Lab1
+   14  endFile
+   15  cat file1
+   16  ls -l
+   17  ls
+   18  cat > file1 << "endFile"
+   19  total 4
+   20  -rw-r--r-- 1 ngocphu ngocphu 26 Thg 9 21 07:32 file1
+   21  cat >> file1 <<"endFile"
+   22  total 4
+   23  -rw-r--r-- 1 ngocphu ngocphu 26 Thg 9 21 07:32 file1
+   24  endFile
+   25  ls
+   26  sudo apt install sl
+   27  LS
+   28  cowsay "Hello, everyone. I am Le Ngoc Phu">> file1
+   29  sudo apt install cowsay
+   30  cowsay "Hello, everyone. I am Le Ngoc Phu">> file1
+   31  cat file1
+   32  history > file2
+   33  cat file2
+   34  figlet "Enjoy LinuxOS" >> file2
+   35  sudo apt install figlet
+   36  sudo apt install toilet
+   37  figlet "Enjoy LinuxOS" >> file2
+   38  cat file1 file2 > lab1PhuLe16TCLC2
+   39  exit
+   40  cd LinuxOS/Lab1/
+   41  cat file2
+   42  cat file1
+   43  LS
+   44  history > file2
+   45  cat file2
+   46  exit
+   47  cd LinuxOS/
+   48  mkdir Lab2
+   49  cd Lab
+   50  cd Lab2
+   51  gedit
+   52  sort -k 2n filename.txt
+   53  sort -k 2n filmdb.txt
+   54  sort -k  filmdb.txt
+   55  sort -k 1n filmdb.txt
+   56  sort -k 3n filmdb.txt
+   57  sort -c filmdb.txt
+   58  sort -k 2n filmdb.txt
+   59  gedit
+   60  sort -k 2n filmdb.txt
+   61  gedit
+   62  sort -k 2n filmdb.txt
+   63  sort -k 1n filmdb.txt
+   64  sort -k 3n filmdb.txt
+   65  sort -k n filmdb.txt
+   66  sort -k 1n filmdb.txt
+   67  sort -k 3n filmdb.txt
+   68  sort -k 2n filmdb.txt
+   69  sort -k 2n -t $ '\t'  filmdb.txt
+   70  sort -k 2n -t $'\t'  filmdb.txt
+   71  sort -k 1n -t $'\t'  filmdb.txt
+   72  sort -k 3n -t $'\t'  filmdb.txt
+   73  sort -k 1n -t $'\t'  filmdb.txt
+   74  sort -k 2n -t $'\t'  filmdb.txt
+   75  gedit
+   76  sort -k 2n  filmdb.txt
+   77  sort -k 2n -t $'\t'  filmdb.txt
+   78  grep -i "Viet Nam" filmdb.txt
+   79  grep -i "My" filmdb.txt
+   80  man
+   81  man grep
+   82  exit
+   83  gedit
+   84  bin/bash ./if_else.sh
+   85  /bin/bash ./if_else.sh
+   86  gedit
+   87  /bin/bash ./if_else.sh
+   88  gedit
+   89  /bin/bash ./if_else.sh
+   90  exit
+   91  mkdir testsh
+   92  cd testsh/
+   93  gedit
+   94  /bin/bash
+   95  exit
+   96  cd testsh/
+   97  redgit
+   98  redgit
+   99  gedit
+  100  gedit case_demo.sh 
+  101  cd testsh/
+  102  /bin/bash test.sh
+  103  /bin/bash count.sh
+  104  /bin/bash ./count.sh
+  105  /bin/bash count.sh
+  106  clear
+  107  /bin/bash count.sh
+  108  clear
+  109  /bin/bash count.sh
+  110  clear
+  111  /bin/bash count.sh
+  112  /bin/bash count.sh     2
+  113  /bin/bash count.sh     2 3 3 3
+  114  /bin/bash count.sh     2 3 3 3 
+  115  clear
+  116  /bin/bash count.sh     2 3 3 3 
+  117  /bin/bash case.sh
+  118  clear
+  119  /bin/bash case.sh
+  120  clear
+  121  echo $0 
+  122  /bin/bash test\$.sh 
+  123  /bin/bash test.sh 
+  124  /bin/bash test.sh  1 2 3 4 5 6
+  125  clear
+  126  /bin/bash test.sh  1 2 3 4 5 6
+  127  /bin/bash test.sh 
+  128  /bin/bash test.sh  1 2 3 4 5 6
+  129  clear
+  130  /bin/bash test.sh  1 2 3 4 5 6
+  131  /bin/bash set_demo filmdb.txt 
+  132  /bin/sh set_demo filmdb.txt 
+  133  ls -l
+  134  $chmod u+x set_demo.sh
+  135  $chmod u+X set_demo.sh
+  136  $chmod u+x set_demo
+  137  chmod u+x set_demo.sh
+  138  chmod u+x set_demo
+  139  clear
+  140  /bin/sh test_set_demo.sh 
+  141  /bin/sh test_set_demo.sh filmdb.txt count.sh 
+  142  /bin/sh test_set_demo.sh filmdb.txt 
+  143  chmod u+x test_set_demo.sh
+  144  ./test_set_demo.sh filmdb.txt 
+  145  chmod u+x test_set_demo.sh
+  146  ./test_set_demo.sh filmdb.txt 
+  147  /bin/sh test_set_demo.sh filmdb.txt 
+  148  /bin/sh if_demo3.sh 
+  149  /bin/sh if_demo3.sh /bin/ls
+  150  /bin/sh if_demo3.sh filmdb.txt 
+  151  /bin/sh if_demo3.sh ~/testsh
+  152  /bin/sh if_demo3.sh filmdb.txt 
+  153  chmod u+x if_demo3.sh 
+  154  ./if_demo3.sh filmdb.txt 
+  155  ls -l
+  156  ./if_demo3.sh filmdb.txt 
+  157  ls -il
+  158  ./if_demo3.sh filmdb.txt 
+  159  clear
+  160  chmod u+x case_demo.sh 
+  161  ./case_demo.sh 
+  162  touch adasd.sh
+  163  gedit adasd.sh 
+  164  ./case_demo.sh 
+  165  ls -l
+  166  ./case_demo.sh 
+  167  cd testsh/
+  168  chmod c+X giuaky.sh 
+  169  chmod u+X giuaky.sh 
+  170  ./giua
+  171  chmod u+x giuaky.sh 
+  172  ./giuaky.sh 
+  173  clear
+  174  ./giuaky.sh 
+  175  clear
+  176  ./giuaky.sh 
+  177  clear
+  178  ./giuaky.sh 
+  179  clear
+  180  ./giuaky.sh 
+  181  clear
+  182  ./testsh/
+  183  gedrit
+  184  gedit
+  185  cd testsh/
+  186  gedit giuaky.sh 
+  187  cd testsh/
+  188  chmod u+X giuaky.sh 
+  189  ./giuaky.sh 
+  190  clear
+  191  ./giuaky.sh 
+  192  clear
+  193  ./giuaky.sh 
+  194  clear
+  195  ./giuaky.sh 
+  196  clear
+  197  ./giuaky.sh 
+  198  clear
+  199  ./giuaky.sh 
+  200  cd LabC/
+  201  gedit
+  202  gcc -o hello hello.c 
+  203  sudo apt install gcc
+  204  gcc -o hello hello.c 
+  205  sudo apt install gcc
+  206  sudo apt-get update
+  207  gcc -o hello hello.c 
+  208  sudo apt install gcc
+  209  gcc -o hello hello.c 
+  210  ./hello 
+  211  gcc -o hello hello.c 
+  212  ./hello 
+  213  clear
+  214  gcc -o hello2 hello2.c 
+  215  ./hello2.c
+  216  gcc -o hello2 hello2.c
+  217  ./hello2.c
+  218  ./hello2
+  219  ./hello2 3
+  220  ./hello2 3 4  5 6
+  221  gcc -o hello2 hello3.c
+  222  ./hello3
+  223  gcc -o hello3 hello3.c
+  224  ./hello3
+  225  ps -e -o pid.ppid.command
+  226  ps
+  227  ps -e -o pid,ppid.command
+  228  ps -e -o pid,ppid,command
+  229  ./hello3
+  230  ps -e -o pid,ppid,command
+  231  clear
+  232  gcc -o hello4 hello4.c
+  233  ./hello4
+  234  gcc -o hello5 hello5.c
+  235  ./hello5
+  236  gcc -o hello5 hello5.c
+  237  ./hello5
+  238  gcc -o hello6 hello6.c
+  239  ./hello6
+  240  gcc -o hello6 hello6.c
+  241  ./hello6 4
+  242  gcc -o hello6 hello6.c
+  243  ./hello6 4
+  244  gcc -o hello6 hello6.c
+  245  ./hello6 4
+  246  gcc -o hello6 hello6.c
+  247  ./hello6
+  248  gcc -o hello6 hello6.c
+  249  ./hello6
+  250  gcc -o hello6 hello6.c
+  251  ./hello6
+  252  gcc -o hello6 hello6.c
+  253  ./hello6
+  254  ls
+  255  ./hello6
+  256  pwd
+  257  ./hello6
+  258  pwd
+  259  gcc -o hello6 hello6.c
+  260  ./hello6
+  261  clear
+  262  ./hello6
+  263  pwd
+  264  ./hello6
+  265  clear
+  266  gcc -o hello7 hello7.c
+  267  ./hello7
+  268  ./hello7 ls -l / null
+  269  clear
+  270  gcc -o hello7 hello7.c
+  271  ./hello7 ls -l
+  272  ./hello6
+  273  ./hello7 ls -l / NULL
+  274  gcc -o hello7 hello7.c
+  275  ./hello7 ls -l / NULL
+  276  gcc -o hello7 hello7.c
+  277  ./hello7 ls -l / NULL
+  278  ./hello7
+  279  gcc -o hello7 hello7.c
+  280  ./hello7
+  281  gcc -o hello7 hello7.c
+  282  ./hello7 ls -l / (null)
+  283  gcc -o hello7 hello7.c
+  284  ./hello7 ls -l / (null)
+  285  ./hello7 ls -l / NULL
+  286  clear
+  287  gcc -o hello7 hello7.c
+  288  ./hello7 ls -l / NULL
+  289  gcc -o hello7 hello7.c
+  290  ./hello7 ls -l / NULL
+  291  gcc -o hello7 hello7.c
+  292  ./hello7 ls -l / NULL
+  293  gcc -o hello7 hello7.c
+  294  ./hello7 ls -l / NULL
+  295  gcc -o hello7 hello7.c
+  296  ./hello7 ls -l / NULL
+  297  gcc -o hello7 hello7.c
+  298  ./hello7 ls -l / NULL
+  299  gcc -o hello7 hello7.c
+  300  ./hello7 ls -l / NULL
+  301  gcc -o hello7 hello7.c
+  302  ./hello7
+  303  gcc -o hello7 hello7.c
+  304  ./hello7 ls -l / NULL
+  305  ./hello7 ls ls -l / NULL
+  306  gcc -o hello7 hello7.c
+  307  ./hello7 ls ls -l / NULL
+  308  ./hello7 -l
+  309  ./hello7 ls -l / NULL
+  310  ./hello7 -l
+  311  gcc -o hello7 hello7.c
+  312  ./hello7 ls -l / NULL
+  313  gcc -o hello7 hello7.c
+  314  ./hello7 ls -l / NULL
+  315  gcc -o hello7 hello7.c
+  316  ./hello7 ls -l / NULL
+  317  gcc -o hello7 hello7.c
+  318  ./hello7 ls -l
+  319  gcc -o hello7 hello7.c
+  320  ./hello7
+  321  gcc -o hello7 hello7.c
+  322  ./hello7
+  323  gcc -o hello7 hello7.c
+  324  ./hello7 ls -l
+  325  gcc -o hello7 hello7.c
+  326  ./hello7 ls -l
+  327  ./hello7
+  328  ./hello7 ls -l
+  329  gcc -o hello7 hello7.c
+  330  ./hello7
+  331  gcc -o hello7 hello7.c
+  332  ./hello7 ls -l / NULL
+  333  gcc -o hello7 hello7.c
+  334  ./hello7 ls -l / NULL
+  335  gcc -o hello7 hello7.c
+  336  ./hello7 ls -l / NULL
+  337  gcc -o hello7 hello7.c
+  338  ./hello7 ls -l / NULL
+  339  ./hello7 ls -l /
+  340  ./hello7 ls -l /home NULL
+  341  ./hello7 ls -l / NULL
+  342  ./hello7 ls -l
+  343  ./hello7 ls -l / NULL
+  344  gcc -o hello7 hello7.c
+  345  ./hello7 ls ls -l / NULL
+  346  gcc -o hello7 hello7.c
+  347  ./hello7 ls ls -l / NULL
+  348  ./hello7 ls -l / NULL
+  349  ./hello7 -l
+  350  cd LabC/
+  351  gedit hello
+  352  gedit hello.c
+  353  gedit hello2.c
+  354  gedit hello.c
+  355  gedit hello3.c
+  356  gedit hello4.c
+  357  gedit hello5.c
+  358  gedit hello6.c
+  359  gedit hello7.c
+  360  cd LabC/
+  361  ipcs -m
+  362  wget -qO - https://download.sublimetext.com/sublimehq-pub.gpg | sudo apt-key add -
+  363  echo "deb https://download.sublimetext.com/ apt/stable/" | sudo tee /etc/apt/sources.list.d/sublime-text.list
+  364  echo "deb https://download.sublimetext.com/ apt/dev/" | sudo tee /etc/apt/sources.list.d/sublime-text.list
+  365  sudo apt update && sudo apt install sublime-text
+  366  cd Des
+  367  cd Desktop/
+  368  ./hello.php
+  369  php ./hello.php 
+  370  sudo apt install php7.2-cli
+  371  sudo apt install hhvm
+  372  php ./hello.php 
+  373  clear
+  374  php ./hello.php 
+  375  cd LabC/
+  376  ~./bash_history
+  377  cat ~./bash_history
+  378  ls -la
+  379  history 10
+  380  history 20
+  381  clear
+  382  gedit
+  383  gedit zombie.c
+  384  gedit shm.c
+  385  gedit mmap-read.c
+  386  gedit mmap-write.c
+  387  gedit integer-file
+  388  gedit mmap-write.c
+  389  cd LabC/
+  390  gcc -o hello7 hello7.c
+  391  ./hello7
+  392  ./hello7 ls -l / null
+  393  gcc -o hello7 hello7.c
+  394  gcc -o hello6 hello6.c
+  395  ./hello6
+  396  gcc -o hello7 hello7.c
+  397  ./hello7 ls -l / NULL
+  398  ./hello7 ls -l /NULL
+  399  ./hello7 ls -l / NULL
+  400  clear
+  401  ps -e -o pid, ppid, stat, cmd
+  402  gcc -o zombie zombie.c
+  403  ./zombie 
+  404  gcc -o shm shm.c
+  405  ./shm 
+  406  ipcs -m
+  407  gcc -o zombie zombie.c
+  408  ./zombie 
+  409  ps -e -o pid, ppid, stat, cmd
+  410  clear
+  411  gcc -o shm shm.c
+  412  ./shm 
+  413  ipcs -m
+  414  gcc -o shm shm.c
+  415  ipcs -m
+  416  clear
+  417  ./mmap-write ./integer-file
+  418  gcc -o mmap-write mmap-write.c 
+  419  ./mmap-write ./integer-file
+  420  cat ./integer-file 
+  421  gcc -o mmap-read mmap-read.c 
+  422  ./mmap-read ./integer-file
+  423  cat ./integer-file 
+  424  ./mmap-write ./integer-file
+  425  cat ./integer-file 
+  426  ./mmap-write ./integer-file
+  427  cat ./integer-file 
+  428  ./mmap-read ./integer-file
+  429  cat ./integer-file 
+  430  sudo dpkg -i google-chrome-stable_current_*
+  431  sudo apt-get -f install
+  432  mkdir Comics
+  433  cd Comics/
+  434  subl .
+  435  npm init
+  436  sudo apt install nodejs
+  437  node -v
+  438  sudo apt -get update
+  439  sudo apt-get update
+  440  sudo apt-get install nodejs
+  441  sudo apt-get install npm
+  442  node -v
+  443  npm -v
+  444  sudo npm install -g n
+  445  sudo n latest
+  446  npm -v
+  447  node -v
+  448  clear
+  449  node index.js
+  450  npm init
+  451  clear
+  452  npm install express
+  453  npm install expressjs
+  454  npm install expressjs --save
+  455  cd ..
+  456  cd web-comic-Loc/
+  457  npm start
+  458  npm install nodemon
+  459  npm install nodemon --save-dev
+  460  npm start
+  461  npm install dotenv --save
+  462  npm start
+  463  npm install express --save
+  464  npm start
+  465  npm install mongoose --save
+  466  npm start
+  467  npm install bcrypt --save
+  468  npm start
+  469  npm install jsonwebtoken http-status body-parser @hapi/joi @hapi/joi-date --save
+  470  npm start
+  471  sudo mongod
+  472  cd ..
+  473  sudo apt update
+  474  sudo apt install -y mongodb
+  475  sudo systemctl status mongodb
+  476  mongo
+  477  sudo snap install postman
+  478  cd web-comic-Loc/
+  479  npm start
+  480  exut
+  481  exit
+  482  cd LA
+  483  cd LabC/
+  484  gedit pipe.c
+  485  gedit pipe2.c
+  486  cd LabC/
+  487  gcc -o pipe pipe.c 
+  488  ./pipe 
+  489  nt){
+  490  ./pipe 
+  491  gcc -o pipe2 pipe2.c 
+  492  ./pipe2 
+  493  wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+  494  sudo dpkg -i -force-depends google-chrome-stable_current_amd64.deb
+  495  sudo apt-get install -f
+  496  sudo dpkg -i google-chrome-stable_current_amd64.deb
+  497  clear
+  498  sudo dpkg -i google-chrome-stable_current_amd64.deb.
+  499  sudo apt-get install -f 
+  500  ibus-setup
+  501  sudo apt-get install ibus-unikey
+  502  ps -A | grep apt
+  503  sudo kill -9 <pid>
+  504  sudo kill -SIGKILL <pid>
+  505  sudo kill -SIGKILL <2501>
+  506  sudo kill -SIGKILL 2501
+  507  sudo kill -SIGKILL 2505
+  508  sudo rm /var/lib/dpkg/lock
+  509  sudo dpkg --configure -a
+  510  sudo rm /var/lib/apt/lists/lock
+  511  sudo rm /var/cache/apt/archives/lock
+  512  ps -A | grep apt
+  513  clear
+  514  sudo add-apt-repository ppa:ubuntu-vn/ppa
+  515  ibus restart
+  516  sudo apt-get update
+  517  ibus restart
+  518  ibus-setup
+  519  lsb_release -a
+  520  sudo apt-get install ibus-unikey
+  521  ibus restart
+  522  clear
+  523  sudo nano /etc/apt/sources.list.d/google-chrome.list
+  524  wget https://dl.google.com/linux/linux_signing_key.pub
+  525  sudo apt-key add linux_signing_key.pub
+  526  sudo apt update
+  527  sudo apt install google-chrome-stable
+  528  sudo apt install google-chrome-beta
+  529  sudo apt install google-chrome-unstable
+  530  google-chrome-stable
+  531  ls -l
+  532  exit
+  533  cd web-comic-Loc/
+  534  npm start
+  535  npm start
+  536  cd web-comic-Loc/
+  537  npm start
+  538  git status 
+  539  sudo apt install git
+  540  git status 
+  541  git remote -v
+  542  npm install git
+  543  npm start
+  544  npm audit fix
+  545  npm start
+  546  cd web-comic-Loc/
+  547  npm start
+  548  npm install mongoose --save
+  549  npm start
+  550  ps ax | grep node
+  551  killall -9 node
+  552  npm start
+  553  git status
+  554  get init
+  555  git init
+  556  git status
+  557  git add .
+  558  git status
+  559  git commit -m
+  560  git commit -m update-delete-comic
+  561  git commit -m "update-delete-comic"
+  562  git config --global user.email "phule214489@gmail.com"
+  563  git config --global user.name "Phu Le"
+  564  git commit -m "update-delete-comic"
+  565  git status
+  566  git branch -b "phu"
+  567  git branch
+  568  git checkout -b "Phu"
+  569  git remote add-url git@github.com:NgocPhu2009/Web-comic.git
+  570  git remote add git@github.com:NgocPhu2009/Web-comic.git
+  571  git remote -v
+  572  git remote add origin  git@github.com:NgocPhu2009/Web-comic.git
+  573  git remote -v
+  574  git push origin Phu
+  575  git remote add origin  https://github.com/phuocpro1234/web-comic.git
+  576  git remote set-url origin  https://github.com/phuocpro1234/web-comic.git
+  577  git remote -v
+  578  git push origin Phu
+  579  history > history.txt

@@ -22,6 +22,14 @@ app.use(express.json());
 //<---------------routeMiddleware----------------->
 app.use('/api/users', userRoute);
 app.use('/api/comics', comicRoute);
+app.set('view engine', 'pug');
+app.set('views', './views');
+
+app.get('/', (req, res) => {
+	res.render('index', {
+		comic: 'Comics'
+	});
+});
 
 //<---------------start server-------------------------->
 app.listen(port, () => {console.log("Server running in port " + port)});
