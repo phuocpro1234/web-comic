@@ -4,11 +4,6 @@ const httpStatus = require('http-status');
 module.exports = {
    createListChapter: async (req, res) => {
         try {
-             //<--------------checking comic is already exist---------------->
-            // const comicIDExist = await chapterModel.findOne({comicID: req.body.comicID});
-            // if(comicIDExist) 
-            //     return res.status(httpStatus.BAD_REQUEST).send("comic already exist");
-            //<--------------checking number of chapter is already exist---------------->
             const chapterNumberExist = await chapterModel.findOne({chapterNumber: req.body.detail[0].chapterNumber});
             if(chapterNumberExist) 
                 return res.status(httpStatus.BAD_REQUEST).send("chapter already exist");
