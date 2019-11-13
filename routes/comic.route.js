@@ -10,7 +10,12 @@ router.get('/:id', comicController.getComicById);
 router.put('/:id/update-comic', comicController.update);
 
 
-router.get('/:id/create-chapter', chapterController.addChapter);
-router.get('/:id/update-chapter', chapterController.addChapter);
+router.get('/:id/create-list-chapter', chapterController.createListChapter);
+router.get('/:id/add-new-chapter', chapterController.addNewChapter);
+router.get('/:id/update-chapter', chapterController.updateChapter);
+router.get('/:id/list-chapter', chapterController.getAllChapter);
+router.get('/:id/delete-chapter', chapterController.deleteChapter);
+
+
 
 module.exports = router;

@@ -24,7 +24,7 @@ module.exports = {
     },
     delete: async (req, res) => {
         try {
-            const deleteComic = await comicModel.findOneAndRemove();
+            const deleteComic = await comicModel.findOneAndRemove( {_id: req.body.id });
             return (!deleteComic) ? res.send("cannot delete this comic") : res.send("Comic successfully deleted!");
         } catch (err) {
             return res.status(httpStatus.BAD_REQUEST).send(err);
